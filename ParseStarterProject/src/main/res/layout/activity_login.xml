@@ -27,6 +27,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/edittext"
         android:ems="10"
         android:hint="Enter Email-Id"
         android:inputType="textEmailAddress"
@@ -35,12 +36,13 @@
         app:layout_constraintTop_toBottomOf="@+id/borrowReq" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/bpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
+        android:background="@drawable/edittext"
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
@@ -52,14 +54,49 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="201dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
         android:layout_marginTop="34dp"
+        android:background="@drawable/buttonstyle"
         android:text="log In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/bpassword"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <RadioGroup
+        android:id="@+id/Radiogroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpassword">
+
+        <RadioButton
+            android:id="@+id/lenderRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lender"
+            android:textColor="@android:color/holo_green_light" />
+
+        <RadioButton
+            android:id="@+id/borrowerRadioBtn"
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrower"
+            android:textColor="@android:color/holo_green_light" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>

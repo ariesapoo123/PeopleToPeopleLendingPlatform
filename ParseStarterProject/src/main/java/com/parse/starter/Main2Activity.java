@@ -14,7 +14,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        lbutton = findViewById(R.id.lenderBtn);
+        lbutton = findViewById(R.id.lenderRadioBtn);
         lbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,9 +26,13 @@ public class Main2Activity extends AppCompatActivity {
         bbutton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSignup();
+                openbsignup();
             }
         });
+    }
+    public  void openbsignup(){
+        Intent intent1= new Intent(this,bsignup.class);
+        startActivity(intent1);
     }
     public void openSignup(){
         Intent intent = new Intent(this,signupActivity.class);

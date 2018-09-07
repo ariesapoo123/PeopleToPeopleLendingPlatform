@@ -7,11 +7,12 @@
     tools:context="com.parse.starter.Main2Activity">
 
     <Button
-        android:id="@+id/lenderBtn"
+        android:id="@+id/lenderRadioBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginStart="50dp"
+        android:background="@drawable/buttonstyle"
         android:layout_marginTop="135dp"
         android:text="LENDER"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +25,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="211dp"
         android:layout_marginEnd="50dp"
+        android:background="@drawable/buttonstyle"
         android:layout_marginStart="50dp"
         android:layout_marginTop="69dp"
         android:text="BORROWER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lenderBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/lenderRadioBtn" />
 </android.support.constraint.ConstraintLayout>

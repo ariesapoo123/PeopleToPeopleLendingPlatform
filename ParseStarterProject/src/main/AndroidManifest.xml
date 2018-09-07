@@ -39,7 +39,13 @@
         <activity android:name=".loginAtivity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".p2borrower" />
-        <activity android:name=".ReqLoanSign"></activity>
+        <activity android:name=".ReqLoanSign" />
+        <activity android:name=".bsignup" />
+        <activity android:name=".lenderActivity" />
+        <activity android:name=".advLoan" />
+        <activity android:name=".LendersListActivity" />
+        <activity android:name=".BorrowerListActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>
